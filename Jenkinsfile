@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    REPO = "Sreehitha23/flask-mysql-app"   
+    REPO = "sreehitha23/flask-mysql-app"   
     IMAGE_TAG = "${env.BUILD_ID}"
     DOCKERHUB_CREDENTIALS = "dockerhub-creds"
   }
