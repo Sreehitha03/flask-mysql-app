@@ -1,6 +1,9 @@
 # Use a lightweight Python image
 FROM python:3.11-slim
 
+# Install curl (needed for Jenkins integration testing)
+RUN apt-get update && apt-get install -y curl && apt-get clean
+
 # Set work directory
 WORKDIR /app
 
