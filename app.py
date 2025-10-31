@@ -5,7 +5,7 @@ import time
 
 app = Flask(__name__)
 
-# Database configuration from environment
+# the info is collected from the env file present, gitignore env file
 DB_HOST = os.getenv("DB_HOST", "db")
 DB_NAME = os.getenv("DB_NAME", "exampledb")
 DB_USER = os.getenv("DB_USER", "user")
